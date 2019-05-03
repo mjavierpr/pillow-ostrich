@@ -1,0 +1,54 @@
+* { margin: 0; padding: 0; box-sizing: border-box;
+    font: {family: arial, sans-serif; size: 1em;}
+}
+body {background-color: rgb(255, 255, 255); color: rgb(65, 65, 93);
+    a {text-decoration: none; display: inline-block; color: rgb(65, 65, 93);}
+}
+$bizq1: 40vw;
+$bder1: 60vw;
+header {display: sticky; position: top; display: flex; height: 20vh;
+    > div.bizq1 {width: $bizq1; padding: 5vh 0 0 8%;
+        > a > h1 {font-size: 1.2em;}
+    }
+    > div.bder1 {width: $bder1; background-color: rgb(190, 215, 235); padding: 4vh 0 0 4%;
+        > nav {display: flex; justify-content: space-around; align-items: center;
+            > a {font-weight: bold;}
+        }
+    }
+}
+.ultimate {display: flex; height: 80vh;
+    > div.bizq1 {width: $bizq1;
+        > div {position: relative; z-index: 1;
+            > img {width: auto; height: 80vh;}
+        }
+    }
+    > div.bder1 {width: $bder1; background-color: rgb(190, 215, 235); padding: 0 14%;
+        > div {position: relative; z-index: 1;
+            > h2 {font-size: 4em; margin-top: 10vh;}
+            > h3 {font-size: 1.5em; font-weight: normal; color: rgb(91, 100, 130); margin-top: 2vh;}
+        }
+    }
+}
+.benefits {display: flex; height: 108vh;
+    > div.bizq1 {width: $bizq1; padding-left: 6vw;
+                 -webkit-column-count: 2; -moz-column-count: 2; -o-column-count: 2; column-count: 2; column-gap: 0;
+        > a {height: 32vh; border: 1px solid rgb(223, 223, 225); display: flex; flex-direction: column; justify-content: space-between; background-color: rgb(255, 255, 255); position: relative; overflow: hidden;
+            &:hover {top: -9px; right: -9px; z-index: 1;
+                -webkit-box-shadow: -10px 10px 0px 1px rgba(212,195,212,0.75);-moz-box-shadow: -10px 10px 0px 1px rgba(212,195,212,0.75); box-shadow: -10px 10px 0px 1px rgba(212,195,212,0.75);} 
+            > div:last-child {justify-self: flex-end; height: 12vh; font-size: 1.3em; font-weight: bold; margin-left: 2vw;}
+        }
+        @for $i from 1 through 6 {
+            > a:nth-child(#{$i}) > div:first-child {height: 10vh; background: url('img/ico#{$i}.jpg') no-repeat; background-position: 90% 2vh; background-size: auto 8vh;}
+        }
+    }
+    > div.bder1 {width: $bder1; background-color: rgb(190, 215, 235); display: flex; flex-direction: column; justify-content: center; padding: 0 12%;
+        > img {width: 100%; }
+        > div {font-size: 3.8em; font-weight: bold; text-align: right;}
+    }
+}
+button.boton {padding: 12px 34px; font-weight: bold; border: none;
+    &.blanco {background-color: white;}
+    &.naranja {background-color: rgb(238, 141, 103); margin-top: 5vh;
+        > a {color: white;}
+    }
+}

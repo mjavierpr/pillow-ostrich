@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial, sans-serif;
+  font-size: 1em;
+}
+
+body {
+  background-color: white;
+  color: #41415d;
+}
+body a {
+  text-decoration: none;
+  display: inline-block;
+  color: #41415d;
+}
+
+header {
+  display: sticky;
+  position: top;
+  display: flex;
+  height: 20vh;
+}
+header > div.bizq1 {
+  width: 40vw;
+  padding: 5vh 0 0 8%;
+}
+header > div.bizq1 > a > h1 {
+  font-size: 1.2em;
+}
+header > div.bder1 {
+  width: 60vw;
+  background-color: #bed7eb;
+  padding: 4vh 0 0 4%;
+}
+header > div.bder1 > nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header > div.bder1 > nav > a {
+  font-weight: bold;
+}
+
+.ultimate {
+  display: flex;
+  height: 80vh;
+}
+.ultimate > div.bizq1 {
+  width: 40vw;
+}
+.ultimate > div.bizq1 > div {
+  position: relative;
+  z-index: 1;
+}
+.ultimate > div.bizq1 > div > img {
+  width: auto;
+  height: 80vh;
+}
+.ultimate > div.bder1 {
+  width: 60vw;
+  background-color: #bed7eb;
+  padding: 0 14%;
+}
+.ultimate > div.bder1 > div {
+  position: relative;
+  z-index: 1;
+}
+.ultimate > div.bder1 > div > h2 {
+  font-size: 4em;
+  margin-top: 10vh;
+}
+.ultimate > div.bder1 > div > h3 {
+  font-size: 1.5em;
+  font-weight: normal;
+  color: #5b6482;
+  margin-top: 2vh;
+}
+
+.benefits {
+  display: flex;
+  height: 108vh;
+}
+.benefits > div.bizq1 {
+  width: 40vw;
+  padding-left: 6vw;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  -o-column-count: 2;
+  column-count: 2;
+  column-gap: 0;
+}
+.benefits > div.bizq1 > a {
+  height: 32vh;
+  border: 1px solid #dfdfe1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+}
+.benefits > div.bizq1 > a:hover {
+  top: -9px;
+  right: -9px;
+  z-index: 1;
+  -webkit-box-shadow: -10px 10px 0px 1px rgba(212, 195, 212, 0.75);
+  -moz-box-shadow: -10px 10px 0px 1px rgba(212, 195, 212, 0.75);
+  box-shadow: -10px 10px 0px 1px rgba(212, 195, 212, 0.75);
+}
+.benefits > div.bizq1 > a > div:last-child {
+  justify-self: flex-end;
+  height: 12vh;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-left: 2vw;
+}
+.benefits > div.bizq1 > a:nth-child(1) > div:first-child {
+  height: 10vh;
+  background: url("img/ico1.jpg") no-repeat;
+  background-position: 90% 2vh;
+  background-size: auto 8vh;
+}
+.benefits > div.bizq1 > a:nth-child(2) > div:first-child {
+  height: 10vh;
+  background: url("img/ico2.jpg") no-repeat;
+  background-position: 90% 2vh;
+  background-size: auto 8vh;
+}
+.benefits > div.bizq1 > a:nth-child(3) > div:first-child {
+  height: 10vh;
+  background: url("img/ico3.jpg") no-repeat;
+  background-position: 90% 2vh;
+  background-size: auto 8vh;
+}
+.benefits > div.bizq1 > a:nth-child(4) > div:first-child {
+  height: 10vh;
+  background: url("img/ico4.jpg") no-repeat;
+  background-position: 90% 2vh;
+  background-size: auto 8vh;
+}
+.benefits > div.bizq1 > a:nth-child(5) > div:first-child {
+  height: 10vh;
+  background: url("img/ico5.jpg") no-repeat;
+  background-position: 90% 2vh;
+  background-size: auto 8vh;
+}
+.benefits > div.bizq1 > a:nth-child(6) > div:first-child {
+  height: 10vh;
+  background: url("img/ico6.jpg") no-repeat;
+  background-position: 90% 2vh;
+  background-size: auto 8vh;
+}
+.benefits > div.bder1 {
+  width: 60vw;
+  background-color: #bed7eb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 12%;
+}
+.benefits > div.bder1 > img {
+  width: 100%;
+}
+.benefits > div.bder1 > div {
+  font-size: 3.8em;
+  font-weight: bold;
+  text-align: right;
+}
+
+button.boton {
+  padding: 12px 34px;
+  font-weight: bold;
+  border: none;
+}
+button.boton.blanco {
+  background-color: white;
+}
+button.boton.naranja {
+  background-color: #ee8d67;
+  margin-top: 5vh;
+}
+button.boton.naranja > a {
+  color: white;
+}
+
+/*# sourceMappingURL=estilos.css.map */
